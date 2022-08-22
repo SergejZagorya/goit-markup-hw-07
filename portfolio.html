@@ -12,236 +12,245 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <!-- *===================Работа 7========================= -->
-
   <body class="body">
     <!-- *header  -->
-    <header class="page-header">
-      <div class="container header-container">
+
+    <header class="header">
+      <div class="container header__container">
         <nav class="nav">
-          <a href="./index.html" class="link header-logo logo header-link" lang="en"><span class="accent">Web</span>Studio</a>
-          <ul class="list nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="link nav-link header-link">Студия</a>
+          <a href="./index.html" class="logo link header__logo header__link" lang="en"><span class="header__accent">Web</span>Studio</a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="link nav__link header__link">Студия</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="link nav-link header-link current">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="link nav__link header__link header__link-current">Портфолио</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="link nav-link header-link">Контакты</a>
+            <li class="nav__item">
+              <a href="#" class="link nav__link header__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list nav-address">
-          <li class="address-item">
-            <a href="mailto:info@devstudio.com" class="link header-contacts header-link">
-              <svg class="header-icon" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use></svg
-              >nfo@devstudio.com</a
-            >
-          </li>
-          <li class="address-item">
-            <a href="tel:+380961111111" class="link header-contacts header-link"
-              ><svg class="header-icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+
+        <div class="address">
+          <ul class="list nav__address">
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="link header__contacts header__link">
+                <svg class="header__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#envelope"></use></svg
+                >nfo@devstudio.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a href="tel:+380961111111" class="link header__contacts header__link"
+                ><svg class="header__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- Портфолио -->
-      <section class="section">
+      <!-- *=====Портфолио===== -->
+      <section class="section portf">
         <div class="container">
           <!-- Скрытый заголовок -->
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- Кнопки-фильтр портфолио -->
-          <ul class="list button-list">
-            <li class="button-item">
-              <button type="button" class="button portf-btn current-btn">Все</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="button portf-btn">Веб сайты</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="button portf-btn">Приложения</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="button portf-btn">Дизайн</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="button portf-btn">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter">
+            <ul class="list filter__list">
+              <li class="filter__item">
+                <button type="button" class="button filter__btn filter__btn-current">Все</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="button filter__btn">Веб сайты</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="button filter__btn">Приложения</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="button filter__btn">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="button filter__btn">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
 
-          <!-- Карточки портфолио -->
-          <ul class="list portf-list">
-            <!-- карточка -->
-            <li class="portf-item">
-              <!-- ссылка с фото заголовком и текстом -->
-              <a href="" class="link portf-link test-link">
-                <div class="dropdown-inner">
-                  <!-- фото -->
-                  <img src="./images/tekhnokr.jpg" alt="Пример веб-сайта" width="370" height="294" />
+          <!-- *Карточки портфолио -->
 
-                  <!--* Выпадающее меню -->
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+          <div class="cards">
+            <ul class="list cards__list">
+              <!-- карточка -->
+              <li class="cards__item">
+                <!-- ссылка с фото заголовком и текстом -->
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown dropdown">
+                    <!-- фото -->
+                    <img src="./images/tekhnokr.jpg" alt="Пример веб-сайта" width="370" height="294" />
 
-                <div class="border">
-                  <h2 class="portf-name">Технокряк</h2>
-                  <p class="portf-descr">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link portf-link">
-                <div class="dropdown-inner">
-                  <img src="./images/poster.jpg" alt="Пример дизайна" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                  <p class="portf-descr">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/restaurant.jpg" alt="Пример приложения" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portf-descr">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/prime.jpg" alt="Пример продукта" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name">Проект <span lang="en">Prime</span></h2>
-                  <p class="portf-descr">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/boxes.jpg" alt="Пример приложения" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portf-descr">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/inspiration.jpg" alt="Пример веб-сайта" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name" lang="en">Inspiration has no Borders</h2>
-                  <p class="portf-descr">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/edition.jpg" alt="Пример дизайна" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="portf-descr">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/lab.jpg" alt="Пример продукта" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name" lang="en">Проект <span>LAB</span></h2>
-                  <p class="portf-descr">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="portf-item">
-              <a href="" class="link">
-                <div class="dropdown-inner">
-                  <img src="./images/gbusiness.jpg" alt="ППример приложения" width="370" height="294" />
-                  <p class="portf-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                <div class="border">
-                  <h2 class="portf-name" lang="en">Growing Business</h2>
-                  <p class="portf-descr">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+                    <!--* Выпадающее меню -->
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+
+                  <div class="cards__border">
+                    <h2 class="cards__name">Технокряк</h2>
+                    <p class="cards__descr">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/poster.jpg" alt="Пример дизайна" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                    <p class="cards__descr">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/restaurant.jpg" alt="Пример приложения" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="cards__descr">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/prime.jpg" alt="Пример продукта" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name">Проект <span lang="en">Prime</span></h2>
+                    <p class="cards__descr">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/boxes.jpg" alt="Пример приложения" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name">Проект <span lang="en">Boxes</span></h2>
+                    <p class="cards__descr">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/inspiration.jpg" alt="Пример веб-сайта" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name" lang="en">Inspiration has no Borders</h2>
+                    <p class="cards__descr">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/edition.jpg" alt="Пример дизайна" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name">Издание <span lang="en">Limited Edition</span></h2>
+                    <p class="cards__descr">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/lab.jpg" alt="Пример продукта" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name" lang="en">Проект <span>LAB</span></h2>
+                    <p class="cards__descr">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="" class="cards__link">
+                  <div class="cards__dropdown">
+                    <img src="./images/gbusiness.jpg" alt="ППример приложения" width="370" height="294" />
+                    <p class="dropdown__text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                  <div class="cards__border">
+                    <h2 class="cards__name" lang="en">Growing Business</h2>
+                    <p class="cards__descr">Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
+    <!--*=====Футер=====-->
+
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer__container">
         <div>
-          <a href="./index.html" class="logo footer-logo link footer-link" lang="en"> <span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo footer__logo link footer__link" lang="en"> <span class="accent">Web</span>Studio</a>
           <address class="address">
-            <ul class="list footer-list">
-              <li class="footer-item">
-                <a href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" class="footer-address link footer-link"> г. Киев, пр-т Леси Украинки, 26 </a>
+            <ul class="list footer__list">
+              <li class="footer__item">
+                <a href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" class="footer__address link footer__link"> г. Киев, пр-т Леси Украинки, 26 </a>
               </li>
-              <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="footer-contacts link footer-link">info@devstudio.com</a>
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="footer__contacts link footer__link">info@devstudio.com</a>
               </li>
-              <li class="footer-item">
-                <a href="tel:+380961111111" class="footer-contacts link footer-link">+38 096 111 11 11</a>
+              <li class="footer__item">
+                <a href="tel:+380961111111" class="footer__contacts link footer__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-inner">
-          <p class="footer-slogan">Присоединяйтесь</p>
+        <div class="footer__inner">
+          <p class="footer__slogan">Присоединяйтесь</p>
           <ul class="social list">
-            <li class="social-item item">
-              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
-                <svg class="join-icon" width="20" height="20">
+            <li class="join social__item item">
+              <a href="#" class="social__link join__link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item item">
-              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__item item">
+              <a href="#" class="social__link join__link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item item">
-              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__item item">
+              <a href="#" class="social__link join__link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item item">
-              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__item item">
+              <a href="#" class="social__link join__link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -249,21 +258,22 @@
           </ul>
         </div>
 
-        <!-- *Форма в footer  -->
+        <!-- **Форма в footer  -->
+        <div class="form-inner">
+          <strong class="form-inner__slogan">Подпишитесь на рассылку </strong>
+          <form name="signup_form" autocomplete="on" novalidate class="form-footer">
+            <label class="form-footer__label">
+              <input type="email" name="email" id="email" class="form-footer__input" placeholder="E-mail" />
+            </label>
 
-        <form name="signup_form" autocomplete="on" novalidate class="form-footer">
-          <label for="email" class="form-label">Подпишитесь на рассылку </label>
-          <div class="input-inner">
-            <input type="email" name="email" id="email" class="footer-input" placeholder="E-mail" />
-
-            <button type="submit" class="button form-button">
+            <button type="submit" class="button form-footer__button">
               Подписаться
-              <svg class="footer-icon" width="24" height="24">
+              <svg class="form-footer__icon" width="24" height="24">
                 <use href="./images/sprite.svg#send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
