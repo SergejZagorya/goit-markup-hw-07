@@ -89,7 +89,6 @@ body {
   font-size: 14px;
   color: var(--title-color);
 }
-
 .list {
   padding-left: 0;
   list-style: none;
@@ -873,7 +872,7 @@ body {
   pointer-events: none;
 }
 
-.modal-wrapper {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -894,7 +893,7 @@ body {
   transform: translate(-50%, 100%) scale(0.3);
 }
 
-.modal-button {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -911,25 +910,25 @@ body {
   transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal__close:hover,
+.modal__close:focus {
   fill: var(--accent-color);
   border: 2px solid var(--accent-color);
   outline: 2px solid var(--accent-color);
   background-color: var(--primary-background-color);
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-label {
+.modal__label {
   position: relative;
   color: var(--title-color);
 }
 
-.form-title {
+.modal__title {
   display: inline-flex;
   justify-content: center;
   margin-bottom: 12px;
@@ -941,7 +940,7 @@ body {
   color: #212121;
 }
 
-.modal-input {
+.label__input {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -951,7 +950,7 @@ body {
   transition: border-color 300ms var(--timing-function), outline 300ms var(--timing-function);
 }
 
-.label-icon {
+.label__icon {
   position: absolute;
   top: 45%;
   left: 3%;
@@ -960,28 +959,24 @@ body {
 }
 
 /* *синяя рамка инпута при ховере */
-.modal-label:hover .modal-input {
+.modal__label:hover .label__input {
   border-color: var(--accent-color);
 }
 /* *синяя иконка инпута при ховере */
-.modal-label:hover .label-icon {
+.modal__label:hover .label__icon {
   fill: var(--accent-color);
 }
 /* *синяя рамка инпута при фокусе */
-.modal-input:focus {
+.label__input:focus {
   border-color: var(--accent-color);
   outline: 1px solid var(--accent-color);
 }
 /* *синяя иконка инпута при фокусе */
-.modal-input:focus + .label-icon {
+.label__input:focus + .label__icon {
   fill: var(--accent-color);
 }
 
-/* .modal-input :placeholder-shown {
-  border-color: var(--accent-color);
-} */
-
-.label-name {
+.label__name {
   display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -992,7 +987,7 @@ body {
   color: var(--text-color);
 }
 
-.feedback {
+.label__feedback {
   padding: 12px 16px;
   resize: none;
   width: 100%;
@@ -1003,7 +998,7 @@ body {
   transition: border-color 300ms var(--timing-function), outline 300ms var(--timing-function);
 }
 
-.feedback::placeholder {
+.label__feedback::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
@@ -1012,16 +1007,16 @@ body {
 }
 
 /* *синяя рамка поля ввода текста при ховере */
-.modal-label:hover .feedback {
+.modal__label:hover .label__feedback {
   border-color: var(--accent-color);
 }
 /* *синяя рамка поля ввода текста при фокусе */
-.feedback:focus {
+.label__feedback:focus {
   border-color: var(--accent-color);
   outline: 1px solid var(--accent-color);
 }
 
-.checkbox-label {
+.modal__checkbox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1030,7 +1025,7 @@ body {
   /* outline: 2px dashed teal; */
 }
 
-.checkbox-icon {
+.checkbox__icon {
   margin-right: 8px;
   border: 2px solid var(--title-color);
   border-radius: 4px;
@@ -1040,20 +1035,20 @@ body {
   transition: background-color 250ms var(--timing-function), border-color 300ms var(--timing-function);
 }
 
-.checkbox-label:hover .checkbox-icon {
+.checkbox__label:hover .checkbox__icon {
   border-color: var(--accent-color);
 }
 
-.checkbox:focus + .checkbox-icon {
+.checkbox__input:hover + .checkbox__icon {
   border-color: var(--accent-color);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
 
-.checkbox-text {
+.checkbox__text {
   margin-right: 5px;
   font-weight: 400;
   font-size: 14px;
@@ -1062,7 +1057,7 @@ body {
   color: #757575;
 }
 
-.checkbox-link {
+.checkbox__link {
   position: relative;
   font-weight: 400;
   font-size: 14px;
@@ -1071,7 +1066,7 @@ body {
   color: #2196f3;
 }
 
-.checkbox-link::before {
+.checkbox__link::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1080,7 +1075,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.submit-btn {
+.modal__submit {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1098,7 +1093,7 @@ body {
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.submit-btn:hover {
+.modal__submit:hover {
   background-color: var(--hero-hover-color);
   box-shadow: 0px 3px 1px rgb(0 0 10 / 20%), 0px 1px 2px rgb(0 0 10 / 28%), 0px 2px 2px rgb(0 0 10 / 32%);
 }
