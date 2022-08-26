@@ -1,0 +1,73 @@
+.hero {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bground.jpg);
+  max-width: 1600px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+/** заголовок героя h1*/
+.hero__title {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 696px;
+  font-weight: var(--hero-weight);
+  font-size: var(--hero-size);
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+/** кнопка героя */
+.hero__button {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 28px 10px 52px;
+  min-width: 200px;
+  font-weight: var(--head-weight);
+  font-size: var(--note-size);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-hover-color);
+  }
+}
+
+.hero__icon {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms var(--timing-function);
+  fill: var(--secondary-title-color);
+
+  .hero__button:hover & {
+    transform: translate(-55%, -195%);
+  }
+}
+
+.hero__icon-hovered {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-54%, 90%);
+  transition: transform 250ms var(--timing-function);
+  fill: var(--secondary-title-color);
+
+  .hero__button:hover & {
+    transform: translate(-55%, -50%);
+  }
+}
