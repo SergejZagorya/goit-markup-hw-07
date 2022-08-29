@@ -1,5 +1,7 @@
 # goit-markup-hw-07
 
+<!-- *Переменные* -->
+
 --primary-background-color: #ffffff;
 
 --secondary-background-color: #f5f4fa;

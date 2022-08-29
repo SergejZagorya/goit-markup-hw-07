@@ -1226,7 +1226,6 @@ body {
           transform: translateY(0);
 }
 
-/* скрытый заголовок */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
