@@ -115,4 +115,8 @@
   .cards__item:hover & {
     transform: translateY(0);
   }
+
+  .cards__link:focus & {
+    transform: translateY(0);
+  }
 }

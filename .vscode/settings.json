@@ -1,12 +1,17 @@
 {
-  "bookmarks.sideBar.expanded": true,
-  "cSpell.customDictionaries": {
-    "custom-dictionary-workspace": {
-      "name": "custom-dictionary-workspace",
-      "path": "${workspaceFolder:goit-markup-hw-04}/.cspell/custom-dictionary-workspace.txt",
-      "addWords": true,
-      "scope": "workspace"
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
     }
-  },
-  "liveServer.settings.port": 5501
+  ],
+  "liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
